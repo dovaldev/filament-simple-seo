@@ -2,6 +2,8 @@
 
 namespace Dovaldev\FilamentSimpleSeo;
 
+use Dovaldev\FilamentSimpleSeo\Commands\FilamentSimpleSeoCommand;
+use Dovaldev\FilamentSimpleSeo\Testing\TestsFilamentSimpleSeo;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -13,8 +15,6 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Dovaldev\FilamentSimpleSeo\Commands\FilamentSimpleSeoCommand;
-use Dovaldev\FilamentSimpleSeo\Testing\TestsFilamentSimpleSeo;
 
 class FilamentSimpleSeoServiceProvider extends PackageServiceProvider
 {

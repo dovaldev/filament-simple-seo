@@ -16,5 +16,4 @@ class Seo extends Model
     {
         return $this->morphTo();
     }
-
 }
