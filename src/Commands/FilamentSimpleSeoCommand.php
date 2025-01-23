@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Dovaldev\FilamentSimpleSeo\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentSimpleSeoCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-simple-seo';
 
     public $description = 'My command';
 
