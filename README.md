@@ -76,6 +76,19 @@ $filamentSimpleSeo = new Dovaldev\FilamentSimpleSeo();
 echo $filamentSimpleSeo->echoPhrase('Hello, Dovaldev!');
 ```
 
+## Adding SEO to User Model
+
+To add SEO to the User model, add the following method to the User model:
+
+```php
+/**
+ * Get the SEO data for the user.
+ */
+public function seo() {
+    return $this->morphOne(Seo::class, 'seoable');
+}
+```
+
 ## Testing
 
 ```bash
