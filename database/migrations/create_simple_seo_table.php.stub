@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('filament_simple_seo_table', function (Blueprint $table) {
+        Schema::create('seos', function (Blueprint $table) {
             $table->string('title')->nullable();
             $table->string('description')->nullable();
             $table->boolean('index')->default(true);
@@ -18,5 +18,13 @@ return new class extends Migration
             $table->string('seoable_type');
             $table->timestamps();
         });
+    }
+
+    /**
+    * Reverse the migrations.
+    */
+    public function down(): void
+    {
+        Schema::dropIfExists('seos');
     }
 };

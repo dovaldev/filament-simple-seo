@@ -146,7 +146,7 @@ class FilamentSimpleSeoServiceProvider extends PackageServiceProvider
     protected function getMigrations(): array
     {
         return [
-            'create_filament-simple-seo_table',
+            'create_simple_seo_table',
         ];
     }
 }
