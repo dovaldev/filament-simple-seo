@@ -22,8 +22,6 @@ class FilamentSimpleSeoCommand extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
     public function handle(): int
     {
@@ -35,7 +33,6 @@ class FilamentSimpleSeoCommand extends Command
         $this->callSilent('vendor:publish', ['--tag' => 'tags-migrations']);
 
         $this->info('Filament SEO was installed successfully.');
-
 
         return self::SUCCESS;
     }
