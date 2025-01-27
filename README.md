@@ -69,12 +69,6 @@ return [
 ];
 ```
 
-## Usage
-
-```php
-$filamentSimpleSeo = new Dovaldev\FilamentSimpleSeo();
-echo $filamentSimpleSeo->echoPhrase('Hello, Dovaldev!');
-```
 
 ## Adding SEO to User Model
 
