@@ -75,6 +75,8 @@ return [
 To add SEO to the User model, add the following method to the User model:
 
 ```php
+use Dovaldev\FilamentSimpleSeo\Models\Seo;
+
 /**
  * Get the SEO data for the user.
  */
