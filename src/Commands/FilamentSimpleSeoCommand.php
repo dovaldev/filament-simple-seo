@@ -30,7 +30,6 @@ class FilamentSimpleSeoCommand extends Command
 
         $this->comment('Publishing Filament SEO Migrations...');
         $this->callSilent('vendor:publish', ['--tag' => 'filament-simple-seo-migrations']);
-        $this->callSilent('vendor:publish', ['--tag' => 'tags-migrations']);
 
         $this->info('Filament SEO was installed successfully.');
 

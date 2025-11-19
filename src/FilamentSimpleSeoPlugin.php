@@ -4,6 +4,7 @@ namespace Dovaldev\FilamentSimpleSeo;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Dovaldev\FilamentSimpleSeo\Filament\Resources\SeoResource;
 
 class FilamentSimpleSeoPlugin implements Plugin
 {
@@ -14,7 +15,9 @@ class FilamentSimpleSeoPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        $panel->resources([
+            SeoResource::class,
+        ]);
     }
 
     public function boot(Panel $panel): void

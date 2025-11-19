@@ -9,13 +9,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('seos', function (Blueprint $table) {
+            $table->id();
             $table->string('title')->nullable();
             $table->string('description')->nullable();
             $table->boolean('index')->default(true);
             $table->boolean('follow')->default(true);
             $table->boolean('status')->default(false);
-            $table->unsignedBigInteger('seoable_id');
-            $table->string('seoable_type');
+            $table->morphs('seoable');
             $table->timestamps();
         });
     }
